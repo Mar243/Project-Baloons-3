@@ -1,0 +1,56 @@
+.title-first
+  z-index: 50  
+  color: $color-white
+  position: relative
+  margin: 0 0 5rem 0  
+  &__main  
+    display: block
+    font-weight: 800
+    letter-spacing: 1rem
+    font-size: 5rem
+    margin: 0 0 1rem 0
+    text-transform: uppercase
+    animation-name: lefToRight
+    animation-duration: 2s
+    animation-delay: 1s
+    animation-timing-function: ease
+    backface-visibility: hidden
+    
+  &__secondary 
+    animation-name: rightToLeft 
+    animation-duration: 2s
+    animation-delay: 1s
+    animation-timing-function: ease 
+    backface-visibility: hidden     
+    font-weight: 300
+    display: block
+    letter-spacing: .5rem
+    font-size: 3rem
+
+.paragraph
+  font-size: 1.6rem
+  font-weight: 700
+  letter-spacing: 0.2rem    
+
+.title-second
+  text-align: center
+  font-size: 3.6rem
+  font-weight: 800
+  letter-spacing: 1rem
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0%, rgba(1, 1, 1, 0.70) 100%)
+  -webkit-background-clip: text
+  color: transparent
+  transition: all 1s ease 
+  // backface-visibility: hidden
+  &:hover
+    transform: skewY(2deg) skewY(5deg) scale(1.2)
+    text-shadow: 1rem .4rem .4rem 0 rgba($color-black, .75)
+    backface-visibility: hidden
+
+.title-third
+  font-size: 2rem
+  font-weight: 700
+  letter-spacing: 0.2rem
+  
+
+   
